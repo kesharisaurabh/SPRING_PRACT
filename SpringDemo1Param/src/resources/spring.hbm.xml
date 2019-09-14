@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="bo" class="Beans.Bank">
+		
+	</bean>
+	<bean id="bod" class="Beans.Bank">
+		<constructor-arg value="saurabh" />
+	</bean>
+	
+</beans>

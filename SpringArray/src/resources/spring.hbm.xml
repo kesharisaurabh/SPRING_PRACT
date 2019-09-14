@@ -1,0 +1,13 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="id" class="beans.Student">
+		<property name="name">
+			<list>
+				<value>ABC</value>
+				<value>XYZ</value>
+				<value>pqr</value>
+			</list>
+		</property>
+	</bean>
+</beans>

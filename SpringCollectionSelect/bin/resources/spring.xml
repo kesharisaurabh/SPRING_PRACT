@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"  
+	 xmlns:util="http://www.springframework.org/schema/util" 
+   	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xsi:schemaLocation="http://www.springframework.org/schema/util/spring-beans-2.0.xsd">
+
+			
+	<bean id="t" class="beans.TestBean">
+		<property name="fruts">
+			<util:list list-class="java.util.Vector">
+				<value>Apple</value>
+				<value>mangoes</value>
+				<value>bnana</value>
+			</util:list>
+		</property>
+		<property name="cricket">
+			<util:set set-class="java.util.Set">
+				<value>Dhoni</value>
+				<value>Mahi</value>
+				<value>Kohli</value>
+				<value>rohit</value>
+			</util:set>
+		</property>
+		<property name="CountryCapital">
+			<util:map map-class="java.util.Hashtable">
+				<entry key="Ind" value="Delhi"/>
+				<entry key="Nepal" value="Kathmandu"/>
+			</util:map>
+		</property>	
+	</bean>
+</beans>
