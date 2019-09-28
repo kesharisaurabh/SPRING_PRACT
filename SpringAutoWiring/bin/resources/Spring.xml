@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	<bean id="c" class="beans.Car">
+		<property name="name" value="Swift"/>
+	</bean>
+	<bean id="t" class="beans.test">
+		<property name="id" value="23223"/>
+	</bean>
+</beans>
