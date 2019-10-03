@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="ims" class="bean.IMS">
+	<lookup-method name="IMS_CLG" bean="clg1"/>
+</bean>
+<bean id="clg1" class="bean.CLG">
+	<property name="Teachers" value="30"/>
+	<property name="Students" value="4000"></property>
+</bean>
+<bean id="lnct" class="bean.LNCT">
+	<lookup-method name="LNCT_CLG" bean="clg2"/>
+</bean>
+<bean id="clg2" class="bean.CLG">
+	<property name="Teachers" value="20"/>
+	<property name="Students" value="1500"></property>
+</bean>
+<bean id="scsit" class="bean.SCSIT">
+	<lookup-method name="SCSIT_CLG" bean="clg3"/>
+</bean>
+<bean id="clg3" class="bean.CLG">
+	<property name="Students" value="2300"/>
+	<property name="Teachers" value="15"></property>
+</bean>
+</beans>
